@@ -1,0 +1,24 @@
+{
+  "name": "balloon-css",
+  "version": "0.5.2",
+  "description": "Simple tooltips made of pure CSS",
+  "author": "Claudio Holanda",
+  "license": "MIT",
+  "homepage": "http://kazzkiq.github.io/balloon.css/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazzkiq/balloon.css.git"
+  },
+  "files": [
+    "src/balloon.scss",
+    "balloon.css",
+    "balloon.min.css"
+  ],
+  "main": "balloon.min.css",
+  "scripts": {
+    "build": "node-sass src/balloon.scss ./balloon.css && node-sass src/balloon.scss ./balloon.min.css --output-style compressed"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10"
+  }
+}
